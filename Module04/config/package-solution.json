@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "module-04-demo-client-side-solution",
+    "id": "5084678e-7af0-40cd-aaa5-b5c10f292745",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/module-04-demo.sppkg"
+  }
+}

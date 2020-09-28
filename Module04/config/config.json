@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "module-04-data-access-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/module04DataAccess/Module04DataAccessWebPart.js",
+          "manifest": "./src/webparts/module04DataAccess/Module04DataAccessWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "Module04DataAccessWebPartStrings": "lib/webparts/module04DataAccess/loc/{locale}.js"
+  }
+}

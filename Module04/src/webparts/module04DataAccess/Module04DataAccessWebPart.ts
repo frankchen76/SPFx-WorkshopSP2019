@@ -7,17 +7,16 @@ import {
   PropertyPaneTextField
 } from '@microsoft/sp-webpart-base';
 
-import * as strings from 'Module01Demo01WebPartStrings';
-import { Module01Demo01 } from './components/Module01Demo01';
-import { IModule01Demo01Props } from './components/IModule01Demo01Props';
+import * as strings from 'Module04DataAccessWebPartStrings';
+import Module04DataAccess from './components/Module04DataAccess';
+import { IModule04DataAccessProps } from './components/IModule04DataAccessProps';
 import { setup as pnpSetup } from "@pnp/common";
-import { sp } from "@pnp/sp";
 
-export interface IModule01Demo01WebPartProps {
+export interface IModule04DataAccessWebPartProps {
   description: string;
 }
 
-export default class Module01Demo01WebPart extends BaseClientSideWebPart<IModule01Demo01WebPartProps> {
+export default class Module04DataAccessWebPart extends BaseClientSideWebPart<IModule04DataAccessWebPartProps> {
 
   protected onInit(): Promise<void> {
 
@@ -36,13 +35,12 @@ export default class Module01Demo01WebPart extends BaseClientSideWebPart<IModule
       // });
     });
   }
+
   public render(): void {
-    this.context
-    const element: React.ReactElement<IModule01Demo01Props> = React.createElement(
-      Module01Demo01,
+    const element: React.ReactElement<IModule04DataAccessProps> = React.createElement(
+      Module04DataAccess,
       {
-        description: this.properties.description,
-        webpartContext: this.context
+        description: this.properties.description
       }
     );
 
